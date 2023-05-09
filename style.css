@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #917fb3;
+}
+
+#main {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  margin-top: 50px;
+}
+#rows {
+  display: flex;
+}
+.first {
+  border-top: 3px solid #ffea20;
+}
+.last {
+  border-bottom: 3px solid #ffea20;
+}
+.square {
+  width: 80px;
+  height: 80px;
+}
+box:nth-child(even) {
+  background-color: black;
+}
+section:nth-child(odd) {
+  background-color: black;
+}
+box,
+section {
+  background-color: white;
+}
+
+box:last-child {
+  border-right: 3px #ffea20 solid;
+}
+section:last-child {
+  border-right: 3px #ffea20 solid;
+}
+box:last-child {
+  border-right: 3px #ffea20 solid;
+}
+section:last-child {
+  border-right: 3px #ffea20 solid;
+}
+
+.square-one,
+.square-two {
+  border-left: 3px #ffea20 solid;
+}
+
+@media (max-width: 768px) {
+  #main {
+    width: 560px;
+    height: 560px;
+  }
+  .square {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    width: 320px;
+    height: 320px;
+  }
+  .square {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* chess-pieces */
